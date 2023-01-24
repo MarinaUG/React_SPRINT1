@@ -1,0 +1,230 @@
+main {
+    max-width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.primerblock {
+    display: flex;
+    flex-flow: column;
+    background-image: url("imatges/fonscapçalera.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px auto;
+    margin-bottom: 10px;
+}
+
+.celda1 {
+    display: flex;
+    margin: 20px 20px 0px 20px;  
+}
+
+.subcelda11 {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 15px;
+}
+
+.subcelda11 img {
+    text-align: center;
+    width: 30%;
+}
+
+.subcelda12 {
+    flex: 5 1 auto;
+    margin: 10px;
+    padding: 15px;
+}
+
+a {
+    color: rgb(80, 79, 79);
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+}
+
+i {
+    padding: 10px;
+}
+
+.subcelda13 {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.celda2 {
+    display: flex;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+    color: rgb(255, 129, 19);
+    opacity: 0.5;
+    font-size: x-large;
+    background-color: rgba(208, 207, 209, 0.623);
+}
+
+.subcelda21 {
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 15px;
+}
+
+.segonblock {
+    display: flex;
+    margin-top: 120px auto;
+    margin-bottom: 10px;
+    background-color: rgb(206, 202, 202);
+}
+
+.celda3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+    padding: 0px;
+}
+
+.subcelda3 {
+    flex: 2 1 40%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(240, 238, 238, 0.892);
+}
+
+h3 {
+    color: rgb(247, 247, 146);
+    font-size: 12px;
+    margin-top: -25px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+    background-color: rgb(238, 172, 149);
+}
+
+.subcelda3 p {
+    font-size: 16px;
+    color: rgb(154, 152, 152);
+    column-count: 2;
+}
+
+.subcelda3 a {
+    color: rgb(132, 132, 132)
+}
+
+.subcelda35 {
+    flex-basis: 100%;
+    padding: 0px;
+    text-align: center;
+
+}
+
+.celda4 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    text-align: center;
+    border-left: 10px solid;
+    border-left-color: white;
+}
+
+.subcelda4 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.tercerblock {
+    display: flex;
+    background-color: rgb(206, 202, 202);
+}
+
+.celda5 {
+    flex-basis: 100%;
+    padding: 10px;
+    margin: 0px 5px 0px 5px;
+    background-color: rgba(240, 238, 238, 0.892);
+    text-align: center;
+}
+
+ @media (min-width:768px)and (max-width:1024px) { 
+   /*tabletas*/
+    .segonblock {
+        background-color: rgb(247, 209, 209);
+        flex-direction: column;
+    }
+
+    .celda3 {
+        margin: 20px;
+        background-color: rgb(215, 137, 137);
+    }
+
+    .celda4 {
+        border-left: 0px solid;
+     }
+     .subcelda4{
+        padding:0px;
+        margin:5px;
+     }
+
+    .tercerblock {
+        flex-basis: auto;
+    }
+
+    .celda5 {
+        padding: 20px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    /*mobile*/
+    .primerblock {
+        padding: 10px;
+    }
+
+    .celda1,.celda3,.segonblock {
+        flex-direction: column;
+    }
+
+    .celda1, .celda2, .celda3,.celda4 {
+        flex-basis: 100%;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .subcelda11,.subcelda12,.subcelda13, .subcelda21 {
+        padding: 20px;
+    }
+
+    .segonblock {
+        padding: 10px;
+        background-color: rgb(247, 209, 209);
+    }
+    .celda4 {
+       border-left: 0px solid;
+    }
+    .subcelda4{
+        padding:0px;
+        margin:5px;
+    }
+
+    .tercerblock {
+        padding: 10px;
+    }
+
+    .celda5 {
+        padding: 20px;
+    }
+
+}
